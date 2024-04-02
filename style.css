@@ -116,6 +116,7 @@ nav {
     gap: 12px;
     justify-content: center;
     align-items: center;
+    position: relative;
 }
 
 .icon-user {
@@ -132,6 +133,22 @@ nav {
 
 .nav-right .fa-magnifying-glass, .nav-right .fa-microphone {
     display: none;
+}
+
+.nav-right .fa-bell::after {
+    content: "5";
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    font-size: 10px;
+    border-radius: 50%;
+    background-color: red;
+    color: white;
+    top: 0;
+    left: 75px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .container-main {
