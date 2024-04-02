@@ -26,6 +26,7 @@ nav {
 .nav-icon {
     width: 40px;
     height: 40px;
+    border-radius: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -105,10 +106,8 @@ nav {
     background-color: #efefef;
     border-radius: 50%;
 }
-
 .nav-icon:hover {
     background-color: #dddddd;
-    border-radius: 100%;
 }
 
 .nav-right {
@@ -138,8 +137,8 @@ nav {
 .nav-right .fa-bell::after {
     content: "5";
     position: absolute;
-    width: 15px;
-    height: 15px;
+    width: 16px;
+    height: 16px;
     font-size: 10px;
     border-radius: 50%;
     background-color: red;
@@ -149,6 +148,7 @@ nav {
     display: flex;
     justify-content: center;
     align-items: center;
+    border: 1px solid white;
 }
 
 .container-main {
@@ -418,6 +418,7 @@ a.active-catergory {
     .nav-center {
         width: 580px;
     }
+
 }
 
 @media (max-width: 740px) {
@@ -430,5 +431,22 @@ a.active-catergory {
         width: 46%;
         min-width: 290px;
         margin: 10px;
+    }
+
+    .search {
+        display: none;
+    }
+
+    .nav-center {
+        justify-content: flex-end;
+    }
+
+    .nav-center .fa-microphone {
+        background-color: white;
+        margin-right: 12px;
+    }
+
+    .nav-center .fa-microphone:hover {
+        background-color: #dddddd;
     }
 }
